@@ -63,7 +63,7 @@
 .float-right {
 	float: right;
 }
-
+/* COLS > 1200*/
 /* COLUMNS */
 @for $i from 1 through 12{
     .col-#{$i}{
@@ -140,35 +140,34 @@
     clear: both;
 
 }
-/* MOBILE < 576px */
-@media screen and (max-width: $mobile-max-width){
+/* DESKTOP < 1200 */
+@media screen and (max-width: $col-min-width){
     @for $i from 1 through 12{
-        .mobile-#{$i}{
+        .desktop-#{$i}{
             width: $i*100%/12;
         }
     }
     /* GROUPS COLUMNS */
-    .mobile-group-5{
+    .desktop-group-5{
         width: 20%;
     }
-    .mobile-group-7{
+    .desktop-group-7{ 
         width: 14.28%;
     }
-    .mobile-group-8{
+    .desktop-group-8{
         width: 12.5%;
     }
-    .mobile-group-9{
+    .desktop-group-9{
         width: 11.1%;
     }
-    .mobile-group-10{
+    .desktop-group-10{
         width: 10%;
     }
-    .mobile-group-11{
+    .desktop-group-11{
         width: 9.09%;
     }
-    /* GROUPED */
     .grouped{
-        [class*='mobile-'], [class*='mobile-group-']{
+        [class*='desktop-'], [class*='desktop-group-']{
             &:first-child{
                 padding-right: 0px;
                 padding-left: $padding;
@@ -184,31 +183,97 @@
     }
     /* OFFSETS */
     @for $i from 1 through 12{
-        .mobile-off-#{$i}{
+        .desktop-off-#{$i}{
             margin-left: $i*100%/12;
         }
     }
     /* VISIBILITY */
-    .mobile-hide{
+    .desktop-hide{
         display: none;
     }
-    .mobile-visible{
+    .desktop-visible{
         display: block;
     }
     [class*='-only']{
         display:none;
     }
-    .mobile-only{
+    .desktop-only{
         display:block;
     }
     /* CLEARFIX*/
-    .mobile-clearfix{
+    .desktop-clearfix{
         display: block;
         clear: both;
     }
 }
-/* SMALL > 576px */
-@media screen and (min-width: $small-min-width){
+/* TABLET < 992px */
+@media screen and (max-width: $desktop-min-width){
+    @for $i from 1 through 12{
+        .tablet-#{$i}{
+            width: $i*100%/12;
+        }
+    }
+    /* GROUPS COLUMNS */
+    .tablet-group-5{
+        width: 20%;
+    }
+    .tablet-group-7{
+        width: 14.28%;
+    }
+    .tablet-group-8{
+        width: 12.5%;
+    }
+    .tablet-group-9{
+        width: 11.1%;
+    }
+    .tablet-group-10{
+        width: 10%;
+    }
+    .tablet-group-11{
+        width: 9.09%;
+    }
+    .grouped{
+        [class*='tablet-'], [class*='tablet-group-']{
+            &:first-child{
+                padding-right: 0px;
+                padding-left: $padding;
+            }
+            &:last-child{
+                padding-left: 0px;
+                padding-right: $padding;
+            }
+            padding-right: 0px; 
+            padding-left: 0px;
+            
+        }
+    }
+    /* OFFSETS */
+    @for $i from 1 through 12{
+        .tablet-off-#{$i}{
+            margin-left: $i*100%/12; 
+        }
+    }
+    /* VISIBILITY */
+    .tablet-hide{
+        display: none;
+    }
+    .tablet-visible{
+        display: block;
+    }
+    [class*='-only']{
+        display:none;
+    }
+    .tablet-only{
+        display:block;
+    }
+    /* CLEARFIX*/
+    .tablet-clearfix{
+        display: block;
+        clear: both;
+    }
+}
+/* SMALL < 768px */
+@media screen and (max-width: $tablet-min-width){
     @for $i from 1 through 12{
         .small-#{$i}{
             width: $i*100%/12;
@@ -274,34 +339,35 @@
         clear: both;
     }
 }
-/* TABLET > 768px */
-@media screen and (min-width: $tablet-min-width){
+/* MOBILE < 576px */
+@media screen and (max-width: $small-min-width){
     @for $i from 1 through 12{
-        .tablet-#{$i}{
+        .mobile-#{$i}{
             width: $i*100%/12;
         }
     }
     /* GROUPS COLUMNS */
-    .tablet-group-5{
+    .mobile-group-5{
         width: 20%;
     }
-    .tablet-group-7{
+    .mobile-group-7{
         width: 14.28%;
     }
-    .tablet-group-8{
+    .mobile-group-8{
         width: 12.5%;
     }
-    .tablet-group-9{
+    .mobile-group-9{
         width: 11.1%;
     }
-    .tablet-group-10{
+    .mobile-group-10{
         width: 10%;
     }
-    .tablet-group-11{
+    .mobile-group-11{
         width: 9.09%;
     }
+    /* GROUPED */
     .grouped{
-        [class*='tablet-'], [class*='tablet-group-']{
+        [class*='mobile-'], [class*='mobile-group-']{
             &:first-child{
                 padding-right: 0px;
                 padding-left: $padding;
@@ -317,91 +383,25 @@
     }
     /* OFFSETS */
     @for $i from 1 through 12{
-        .tablet-off-#{$i}{
-            margin-left: $i*100%/12; 
-        }
-    }
-    /* VISIBILITY */
-    .tablet-hide{
-        display: none;
-    }
-    .tablet-visible{
-        display: block;
-    }
-    [class*='-only']{
-        display:none;
-    }
-    .tablet-only{
-        display:block;
-    }
-    /* CLEARFIX*/
-    .tablet-clearfix{
-        display: block;
-        clear: both;
-    }
-}
-/* DESKTOP > 992 */
-@media screen and (min-width: $desktop-min-width){
-    @for $i from 1 through 12{
-        .desktop-#{$i}{
-            width: $i*100%/12;
-        }
-    }
-    /* GROUPS COLUMNS */
-    .desktop-group-5{
-        width: 20%;
-    }
-    .desktop-group-7{ 
-        width: 14.28%;
-    }
-    .desktop-group-8{
-        width: 12.5%;
-    }
-    .desktop-group-9{
-        width: 11.1%;
-    }
-    .desktop-group-10{
-        width: 10%;
-    }
-    .desktop-group-11{
-        width: 9.09%;
-    }
-    .grouped{
-        [class*='desktop-'], [class*='desktop-group-']{
-            &:first-child{
-                padding-right: 0px;
-                padding-left: $padding;
-            }
-            &:last-child{
-                padding-left: 0px;
-                padding-right: $padding;
-            }
-            padding-right: 0px; 
-            padding-left: 0px;
-            
-        }
-    }
-    /* OFFSETS */
-    @for $i from 1 through 12{
-        .desktop-off-#{$i}{
+        .mobile-off-#{$i}{
             margin-left: $i*100%/12;
         }
     }
     /* VISIBILITY */
-    .desktop-hide{
+    .mobile-hide{
         display: none;
     }
-    .desktop-visible{
+    .mobile-visible{
         display: block;
     }
     [class*='-only']{
         display:none;
     }
-    .desktop-only{
+    .mobile-only{
         display:block;
     }
     /* CLEARFIX*/
-    .desktop-clearfix{
+    .mobile-clearfix{
         display: block;
         clear: both;
     }

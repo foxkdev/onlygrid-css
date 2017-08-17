@@ -7,33 +7,42 @@
     <title>OnlyGrid CSS Framework Demo</title>
     <link rel="stylesheet" href="css/onlygrid.css">
     <style>
+        body{
+            background: #f3f3f3;
+            font-family: 'Raleway', sans-serif;
+        }
         .box{
-            height: 30px;
+            padding-top:10px;
+            padding-bottom:10px;
             background: #DADADA;
-            border: 1px solid #BABABC;
-            -webkit-box-shadow: 0px 0px 10px 0px rgba(186,186,188,1);
-            -moz-box-shadow: 0px 0px 10px 0px rgba(186,186,188,1);
-            box-shadow: 0px 0px 10px 0px rgba(186,186,188,1);
+            color: #444;
             margin-top:12px;
+            text-align:center;
+            font-weight: 200;
+            font-size:18px;
+        }
+        .box:hover{
+            background: #c2c2c2;
         }
     </style>
 </head>
 <body>
     <div class="grid">
-        <div class="box col-12 mobile-12">1</div>
+        <div class="col-12"><div class="box">col-12</div></div>
         <div class="grouped">
-                <div class="box col-4 small-6">2</div>
-                <div class="box col-4 small-6">3</div>
+                <div class="col-4 small-6"><div class="box">col-4</div></div>
+                <div class="col-4 small-hide"><div class="box">col-4</div></div>
+                <div class="col-4 small-6"><div class="box">col-4</div></div>
         </div>
         <div class="clearfix"></div>
-        <div class="grouped">
-                <div class="box col-group-5 mobile-group-7">1</div>
-                <div class="box col-group-5 mobile-group-7">2</div>
-                <div class="box col-group-5 mobile-group-7">3</div>
-                <div class="box col-group-5 mobile-group-7">4</div>
-                <div class="box col-group-5 mobile-group-7">5</div>
-                <div class="box mobile-group-7 mobile-only">6</div>
-                <div class="box mobile-group-7 mobile-only">7</div>
+        <div class="">
+                <div class="col-group-5 mobile-group-7"><div class="box">1</div></div>
+                <div class="col-group-5 mobile-group-7"><div class="box">2</div></div>
+                <div class="col-group-5 mobile-group-7"><div class="box">3</div></div>
+                <div class="col-group-5 mobile-group-7"><div class="box">4</div></div>
+                <div class="col-group-5 mobile-group-7"><div class="box">5</div></div>
+                <div class="mobile-group-7 mobile-only"><div class="box">6</div></div>
+                <div class="mobile-group-7 mobile-only"><div class="box">7</div></div>
         </div>
         
     </div>
