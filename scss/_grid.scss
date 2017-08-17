@@ -1,0 +1,123 @@
+/*
+  Only Grid Css
+  Project Page - 
+  Author - Carlos Lopez
+  Email - cloaction@gmail.com
+  Site - 
+*/
+[class*='grid'],
+[class*='col-'],
+[class*='desktop-'],
+[class*='tablet-'],
+[class*='mobile-'],
+.grid:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+[class*='col-'] {
+	float: left;
+  	min-height: 1px;
+    padding-right: $padding; /* column-space */
+    padding-left: $padding;
+}
+
+[class*='col-'] [class*='col-']:last-child {
+    padding-right: 0;
+    padding-left:0;
+}
+
+.grid {
+	width: 100%;
+	min-width: $min-width;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.grid:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* FLOATS */
+.float-left{
+    float:left;
+}
+.float-center{
+    position: relative;
+    display:block;
+    margin: 0 auto;
+}
+.float-right {
+	float: right;
+}
+
+/* COLUMNS */
+@for $i from 1 through 12{
+    .col-#{$i}{
+        width: $i*100/12;
+    }
+}
+/* GROUPS COLUMNS */
+.col-group-5{
+    width: 20%;
+}
+.col-group-7{
+    width: 14.28%;
+}
+.col-group-8{
+    width: 12.5%;
+}
+.col-group-9{
+    width: 11.1%;
+}
+.col-group-10{
+    width: 10%;
+}
+.col-group-11{
+    width: 9.09%;
+}
+/* OFFSETS */
+@for $i from 1 through 12{
+    .col-off-#{$i}{
+        margin-left: $i*100/12;
+    }
+}
+
+@media screen and (max-width: $mobile-max-width){
+    @for $i from 1 through 12{
+        .mobile-#{$i}{
+            width: $i*100/12;
+        }
+    }
+    @for $i from 1 through 12{
+        .mobile-off-#{$i}{
+            margin-left: $i*100/12;
+        }
+    }
+}
+@media screen and (min-width: $tablet-min-width){
+    @for $i from 1 through 12{
+        .tablet-#{$i}{
+            width: $i*100/12;
+        }
+    }
+    @for $i from 1 through 12{
+        .tablet-off-#{$i}{
+            margin-left: $i*100/12;
+        }
+    }
+}
+@media screen and (min-width: $desktop-min-width){
+    @for $i from 1 through 12{
+        .desktop-#{$i}{
+            width: $i*100/12;
+        }
+    }
+    @for $i from 1 through 12{
+        .desktop-off-#{$i}{
+            margin-left: $i*100/12;
+        }
+    }
+}
