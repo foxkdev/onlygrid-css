@@ -1,60 +1,612 @@
 /*
-Error: Undefined variable: "$desktop-min-width".
-        on line 112 of /Users/kloppz/Dev/onlygrid-css/scss/_grid.scss
-        from line 2 of /Users/kloppz/Dev/onlygrid-css/scss/onlygrid.scss
-
-Backtrace:
-/Users/kloppz/Dev/onlygrid-css/scss/_grid.scss:112
-/Users/kloppz/Dev/onlygrid-css/scss/onlygrid.scss:2
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:542:in `block in run_interp_no_strip'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:540:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:540:in `run_interp_no_strip'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:547:in `run_interp'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:512:in `visit_media'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:400:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
+  Only Grid Css
+  Project Page - 
+  Author - Carlos Lopez
+  Email - cloaction@gmail.com
+  Site - 
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$desktop-min-width\".\A         on line 112 of /Users/kloppz/Dev/onlygrid-css/scss/_grid.scss\A         from line 2 of /Users/kloppz/Dev/onlygrid-css/scss/onlygrid.scss"; }
+[class*='grid'],
+[class*='col-'],
+[class*='small-'],
+[class*='desktop-'],
+[class*='tablet-'],
+[class*='mobile-'],
+.grid:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+[class*='col-'],
+[class*='small-'],
+[class*='desktop-'],
+[class*='tablet-'],
+[class*='mobile-'] {
+  float: left;
+  min-height: 1px;
+  padding-right: 12px;
+  /* column-space */
+  padding-left: 12px; }
+
+[class*='col-'] [class*='col-']:last-child {
+  padding-right: 0;
+  padding-left: 0; }
+
+.grid {
+  width: 100%;
+  min-width: auto;
+  margin: 0 auto;
+  overflow: hidden; }
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* FLOATS */
+.float-left {
+  float: left; }
+
+.float-center {
+  position: relative;
+  display: block;
+  margin: 0 auto; }
+
+.float-right {
+  float: right; }
+
+/* COLUMNS */
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+/* GROUPS COLUMNS */
+.col-group-5 {
+  width: 20%; }
+
+.col-group-7 {
+  width: 14.28%; }
+
+.col-group-8 {
+  width: 12.5%; }
+
+.col-group-9 {
+  width: 11.1%; }
+
+.col-group-10 {
+  width: 10%; }
+
+.col-group-11 {
+  width: 9.09%; }
+
+/* OFFSETS */
+.col-off-1 {
+  margin-left: 8.33333; }
+
+.col-off-2 {
+  margin-left: 16.66667; }
+
+.col-off-3 {
+  margin-left: 25; }
+
+.col-off-4 {
+  margin-left: 33.33333; }
+
+.col-off-5 {
+  margin-left: 41.66667; }
+
+.col-off-6 {
+  margin-left: 50; }
+
+.col-off-7 {
+  margin-left: 58.33333; }
+
+.col-off-8 {
+  margin-left: 66.66667; }
+
+.col-off-9 {
+  margin-left: 75; }
+
+.col-off-10 {
+  margin-left: 83.33333; }
+
+.col-off-11 {
+  margin-left: 91.66667; }
+
+.col-off-12 {
+  margin-left: 100; }
+
+/* VISIBILITY */
+.col-hide {
+  display: none; }
+
+.col-visible {
+  display: block; }
+
+[class*='-only'] {
+  display: none; }
+
+.col-only {
+  display: block; }
+
+/* CLEARFIX*/
+.clearfix {
+  display: block;
+  clear: both; }
+
+/* MOBILE < 576px */
+@media screen and (max-width: 576px) {
+  .mobile-1 {
+    width: 8.33333%; }
+
+  .mobile-2 {
+    width: 16.66667%; }
+
+  .mobile-3 {
+    width: 25%; }
+
+  .mobile-4 {
+    width: 33.33333%; }
+
+  .mobile-5 {
+    width: 41.66667%; }
+
+  .mobile-6 {
+    width: 50%; }
+
+  .mobile-7 {
+    width: 58.33333%; }
+
+  .mobile-8 {
+    width: 66.66667%; }
+
+  .mobile-9 {
+    width: 75%; }
+
+  .mobile-10 {
+    width: 83.33333%; }
+
+  .mobile-11 {
+    width: 91.66667%; }
+
+  .mobile-12 {
+    width: 100%; }
+
+  /* GROUPS COLUMNS */
+  .mobile-group-5 {
+    width: 20%; }
+
+  .mobile-group-7 {
+    width: 14.28%; }
+
+  .mobile-group-8 {
+    width: 12.5%; }
+
+  .mobile-group-9 {
+    width: 11.1%; }
+
+  .mobile-group-10 {
+    width: 10%; }
+
+  .mobile-group-11 {
+    width: 9.09%; }
+
+  .mobile-off-1 {
+    margin-left: 8.33333%; }
+
+  .mobile-off-2 {
+    margin-left: 16.66667%; }
+
+  .mobile-off-3 {
+    margin-left: 25%; }
+
+  .mobile-off-4 {
+    margin-left: 33.33333%; }
+
+  .mobile-off-5 {
+    margin-left: 41.66667%; }
+
+  .mobile-off-6 {
+    margin-left: 50%; }
+
+  .mobile-off-7 {
+    margin-left: 58.33333%; }
+
+  .mobile-off-8 {
+    margin-left: 66.66667%; }
+
+  .mobile-off-9 {
+    margin-left: 75%; }
+
+  .mobile-off-10 {
+    margin-left: 83.33333%; }
+
+  .mobile-off-11 {
+    margin-left: 91.66667%; }
+
+  .mobile-off-12 {
+    margin-left: 100%; }
+
+  /* VISIBILITY */
+  .mobile-hide {
+    display: none; }
+
+  .mobile-visible {
+    display: block; }
+
+  [class*='-only'] {
+    display: none; }
+
+  .mobile-only {
+    display: block; }
+
+  /* CLEARFIX*/
+  .mobile-clearfix {
+    display: block;
+    clear: both; } }
+/* SMALL > 576px */
+@media screen and (min-width: 576px) {
+  .small-1 {
+    width: 8.33333%; }
+
+  .small-2 {
+    width: 16.66667%; }
+
+  .small-3 {
+    width: 25%; }
+
+  .small-4 {
+    width: 33.33333%; }
+
+  .small-5 {
+    width: 41.66667%; }
+
+  .small-6 {
+    width: 50%; }
+
+  .small-7 {
+    width: 58.33333%; }
+
+  .small-8 {
+    width: 66.66667%; }
+
+  .small-9 {
+    width: 75%; }
+
+  .small-10 {
+    width: 83.33333%; }
+
+  .small-11 {
+    width: 91.66667%; }
+
+  .small-12 {
+    width: 100%; }
+
+  /* GROUPS COLUMNS */
+  .small-group-5 {
+    width: 20%; }
+
+  .small-group-7 {
+    width: 14.28%; }
+
+  .small-group-8 {
+    width: 12.5%; }
+
+  .small-group-9 {
+    width: 11.1%; }
+
+  .small-group-10 {
+    width: 10%; }
+
+  .small-group-11 {
+    width: 9.09%; }
+
+  .small-off-1 {
+    margin-left: 8.33333%; }
+
+  .small-off-2 {
+    margin-left: 16.66667%; }
+
+  .small-off-3 {
+    margin-left: 25%; }
+
+  .small-off-4 {
+    margin-left: 33.33333%; }
+
+  .small-off-5 {
+    margin-left: 41.66667%; }
+
+  .small-off-6 {
+    margin-left: 50%; }
+
+  .small-off-7 {
+    margin-left: 58.33333%; }
+
+  .small-off-8 {
+    margin-left: 66.66667%; }
+
+  .small-off-9 {
+    margin-left: 75%; }
+
+  .small-off-10 {
+    margin-left: 83.33333%; }
+
+  .small-off-11 {
+    margin-left: 91.66667%; }
+
+  .small-off-12 {
+    margin-left: 100%; }
+
+  /* VISIBILITY */
+  .small-hide {
+    display: none; }
+
+  .small-visible {
+    display: block; }
+
+  [class*='-only'] {
+    display: none; }
+
+  .small-only {
+    display: block; }
+
+  /* CLEARFIX*/
+  .small-clearfix {
+    display: block;
+    content: "";
+    clear: both; } }
+/* TABLET > 768px */
+@media screen and (min-width: 768px) {
+  .tablet-1 {
+    width: 8.33333%; }
+
+  .tablet-2 {
+    width: 16.66667%; }
+
+  .tablet-3 {
+    width: 25%; }
+
+  .tablet-4 {
+    width: 33.33333%; }
+
+  .tablet-5 {
+    width: 41.66667%; }
+
+  .tablet-6 {
+    width: 50%; }
+
+  .tablet-7 {
+    width: 58.33333%; }
+
+  .tablet-8 {
+    width: 66.66667%; }
+
+  .tablet-9 {
+    width: 75%; }
+
+  .tablet-10 {
+    width: 83.33333%; }
+
+  .tablet-11 {
+    width: 91.66667%; }
+
+  .tablet-12 {
+    width: 100%; }
+
+  /* GROUPS COLUMNS */
+  .tablet-group-5 {
+    width: 20%; }
+
+  .tablet-group-7 {
+    width: 14.28%; }
+
+  .tablet-group-8 {
+    width: 12.5%; }
+
+  .tablet-group-9 {
+    width: 11.1%; }
+
+  .tablet-group-10 {
+    width: 10%; }
+
+  .tablet-group-11 {
+    width: 9.09%; }
+
+  .tablet-off-1 {
+    margin-left: 8.33333%; }
+
+  .tablet-off-2 {
+    margin-left: 16.66667%; }
+
+  .tablet-off-3 {
+    margin-left: 25%; }
+
+  .tablet-off-4 {
+    margin-left: 33.33333%; }
+
+  .tablet-off-5 {
+    margin-left: 41.66667%; }
+
+  .tablet-off-6 {
+    margin-left: 50%; }
+
+  .tablet-off-7 {
+    margin-left: 58.33333%; }
+
+  .tablet-off-8 {
+    margin-left: 66.66667%; }
+
+  .tablet-off-9 {
+    margin-left: 75%; }
+
+  .tablet-off-10 {
+    margin-left: 83.33333%; }
+
+  .tablet-off-11 {
+    margin-left: 91.66667%; }
+
+  .tablet-off-12 {
+    margin-left: 100%; }
+
+  /* VISIBILITY */
+  .tablet-hide {
+    display: none; }
+
+  .tablet-visible {
+    display: block; }
+
+  [class*='-only'] {
+    display: none; }
+
+  .tablet-only {
+    display: block; }
+
+  /* CLEARFIX*/
+  .tablet-clearfix {
+    display: block;
+    clear: both; } }
+/* DESKTOP > 992 */
+@media screen and (min-width: 992px) {
+  .desktop-1 {
+    width: 8.33333%; }
+
+  .desktop-2 {
+    width: 16.66667%; }
+
+  .desktop-3 {
+    width: 25%; }
+
+  .desktop-4 {
+    width: 33.33333%; }
+
+  .desktop-5 {
+    width: 41.66667%; }
+
+  .desktop-6 {
+    width: 50%; }
+
+  .desktop-7 {
+    width: 58.33333%; }
+
+  .desktop-8 {
+    width: 66.66667%; }
+
+  .desktop-9 {
+    width: 75%; }
+
+  .desktop-10 {
+    width: 83.33333%; }
+
+  .desktop-11 {
+    width: 91.66667%; }
+
+  .desktop-12 {
+    width: 100%; }
+
+  /* GROUPS COLUMNS */
+  .desktop-group-5 {
+    width: 20%; }
+
+  .desktop-group-7 {
+    width: 14.28%; }
+
+  .desktop-group-8 {
+    width: 12.5%; }
+
+  .desktop-group-9 {
+    width: 11.1%; }
+
+  .desktop-group-10 {
+    width: 10%; }
+
+  .desktop-group-11 {
+    width: 9.09%; }
+
+  .desktop-off-1 {
+    margin-left: 8.33333%; }
+
+  .desktop-off-2 {
+    margin-left: 16.66667%; }
+
+  .desktop-off-3 {
+    margin-left: 25%; }
+
+  .desktop-off-4 {
+    margin-left: 33.33333%; }
+
+  .desktop-off-5 {
+    margin-left: 41.66667%; }
+
+  .desktop-off-6 {
+    margin-left: 50%; }
+
+  .desktop-off-7 {
+    margin-left: 58.33333%; }
+
+  .desktop-off-8 {
+    margin-left: 66.66667%; }
+
+  .desktop-off-9 {
+    margin-left: 75%; }
+
+  .desktop-off-10 {
+    margin-left: 83.33333%; }
+
+  .desktop-off-11 {
+    margin-left: 91.66667%; }
+
+  .desktop-off-12 {
+    margin-left: 100%; }
+
+  /* VISIBILITY */
+  .desktop-hide {
+    display: none; }
+
+  .desktop-visible {
+    display: block; }
+
+  [class*='-only'] {
+    display: none; }
+
+  .desktop-only {
+    display: block; }
+
+  /* CLEARFIX*/
+  .desktop-clearfix {
+    display: block;
+    clear: both; } }

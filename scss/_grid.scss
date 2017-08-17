@@ -7,6 +7,7 @@
 */
 [class*='grid'],
 [class*='col-'],
+[class*='small-'],
 [class*='desktop-'],
 [class*='tablet-'],
 [class*='mobile-'],
@@ -16,7 +17,12 @@
 	box-sizing: border-box;	
 }
 
-[class*='col-'] {
+
+[class*='col-'],
+[class*='small-'],
+[class*='desktop-'],
+[class*='tablet-'],
+[class*='mobile-'] {
 	float: left;
   	min-height: 1px;
     padding-right: $padding; /* column-space */
@@ -32,7 +38,12 @@
 	width: 100%;
 	min-width: $min-width;
 	margin: 0 auto;
-	overflow: hidden;
+    overflow: hidden;
+    &:after{
+        content: "";
+        display: table;
+        clear:both;
+    }
 }
 
 .grid:after {
@@ -56,7 +67,7 @@
 /* COLUMNS */
 @for $i from 1 through 12{
     .col-#{$i}{
-        width: $i*100/12;
+        width: $i*100%/12;
     }
 }
 /* GROUPS COLUMNS */
@@ -84,40 +95,223 @@
         margin-left: $i*100/12;
     }
 }
+/* VISIBILITY */
+.col-hide{
+    display: none;
+}
+.col-visible{
+    display: block;
+}
+[class*='-only']{
+    display:none;
+}
+.col-only{
+    display:block;
+}
+/* CLEARFIX*/
+.clearfix{
+    display: block;
+    clear: both;
 
+}
+/* MOBILE < 576px */
 @media screen and (max-width: $mobile-max-width){
     @for $i from 1 through 12{
         .mobile-#{$i}{
-            width: $i*100/12;
+            width: $i*100%/12;
         }
+    }
+    /* GROUPS COLUMNS */
+    .mobile-group-5{
+        width: 20%;
+    }
+    .mobile-group-7{
+        width: 14.28%;
+    }
+    .mobile-group-8{
+        width: 12.5%;
+    }
+    .mobile-group-9{
+        width: 11.1%;
+    }
+    .mobile-group-10{
+        width: 10%;
+    }
+    .mobile-group-11{
+        width: 9.09%;
     }
     @for $i from 1 through 12{
         .mobile-off-#{$i}{
-            margin-left: $i*100/12;
+            margin-left: $i*100%/12;
         }
     }
+    /* VISIBILITY */
+    .mobile-hide{
+        display: none;
+    }
+    .mobile-visible{
+        display: block;
+    }
+    [class*='-only']{
+        display:none;
+    }
+    .mobile-only{
+        display:block;
+    }
+    /* CLEARFIX*/
+    .mobile-clearfix{
+        display: block;
+        clear: both;
+    }
 }
+/* SMALL > 576px */
+@media screen and (min-width: $small-min-width){
+    @for $i from 1 through 12{
+        .small-#{$i}{
+            width: $i*100%/12;
+        }
+    }
+    /* GROUPS COLUMNS */
+    .small-group-5{
+        width: 20%;
+    }
+    .small-group-7{
+        width: 14.28%;
+    }
+    .small-group-8{
+        width: 12.5%;
+    }
+    .small-group-9{
+        width: 11.1%;
+    }
+    .small-group-10{
+        width: 10%;
+    }
+    .small-group-11{
+        width: 9.09%;
+    }
+    @for $i from 1 through 12{
+        .small-off-#{$i}{
+            margin-left: $i*100%/12; 
+        }
+    }
+    /* VISIBILITY */
+    .small-hide{
+        display: none;
+    }
+    .small-visible{
+        display: block;
+    }
+    [class*='-only']{
+        display:none;
+    }
+    .small-only{
+        display:block;
+    }
+    /* CLEARFIX*/
+    .small-clearfix{
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+/* TABLET > 768px */
 @media screen and (min-width: $tablet-min-width){
     @for $i from 1 through 12{
         .tablet-#{$i}{
-            width: $i*100/12;
+            width: $i*100%/12;
         }
+    }
+    /* GROUPS COLUMNS */
+    .tablet-group-5{
+        width: 20%;
+    }
+    .tablet-group-7{
+        width: 14.28%;
+    }
+    .tablet-group-8{
+        width: 12.5%;
+    }
+    .tablet-group-9{
+        width: 11.1%;
+    }
+    .tablet-group-10{
+        width: 10%;
+    }
+    .tablet-group-11{
+        width: 9.09%;
     }
     @for $i from 1 through 12{
         .tablet-off-#{$i}{
-            margin-left: $i*100/12;
+            margin-left: $i*100%/12; 
         }
     }
+    /* VISIBILITY */
+    .tablet-hide{
+        display: none;
+    }
+    .tablet-visible{
+        display: block;
+    }
+    [class*='-only']{
+        display:none;
+    }
+    .tablet-only{
+        display:block;
+    }
+    /* CLEARFIX*/
+    .tablet-clearfix{
+        display: block;
+        clear: both;
+    }
 }
+/* DESKTOP > 992 */
 @media screen and (min-width: $desktop-min-width){
     @for $i from 1 through 12{
         .desktop-#{$i}{
-            width: $i*100/12;
+            width: $i*100%/12;
         }
+    }
+    /* GROUPS COLUMNS */
+    .desktop-group-5{
+        width: 20%;
+    }
+    .desktop-group-7{ 
+        width: 14.28%;
+    }
+    .desktop-group-8{
+        width: 12.5%;
+    }
+    .desktop-group-9{
+        width: 11.1%;
+    }
+    .desktop-group-10{
+        width: 10%;
+    }
+    .desktop-group-11{
+        width: 9.09%;
     }
     @for $i from 1 through 12{
         .desktop-off-#{$i}{
-            margin-left: $i*100/12;
+            margin-left: $i*100%/12;
         }
+    }
+    /* VISIBILITY */
+    .desktop-hide{
+        display: none;
+    }
+    .desktop-visible{
+        display: block;
+    }
+    [class*='-only']{
+        display:none;
+    }
+    .desktop-only{
+        display:block;
+    }
+    /* CLEARFIX*/
+    .desktop-clearfix{
+        display: block;
+        clear: both;
     }
 }
