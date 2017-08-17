@@ -11,7 +11,7 @@
 [class*='desktop-'],
 [class*='tablet-'],
 [class*='mobile-'],
-.grid:after {
+.grid:after, .grid-box:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;	
@@ -34,7 +34,7 @@
     padding-left:0;
 }
 
-.grid {
+.grid, .grid-box{
 	width: 100%;
 	min-width: $min-width;
 	margin: 0 auto;
@@ -64,6 +64,9 @@
 	float: right;
 }
 /* COLS > 1200*/
+.grid-box{
+    width: $col-max-box;
+}
 /* COLUMNS */
 @for $i from 1 through 12{
     .col-#{$i}{
@@ -142,6 +145,9 @@
 }
 /* DESKTOP < 1200 */
 @media screen and (max-width: $col-min-width){
+    .grid-box{
+        width: $desktop-max-box;
+    }
     @for $i from 1 through 12{
         .desktop-#{$i}{
             width: $i*100%/12;
@@ -208,6 +214,9 @@
 }
 /* TABLET < 992px */
 @media screen and (max-width: $desktop-min-width){
+    .grid-box{
+        width: $tablet-max-box;
+    }
     @for $i from 1 through 12{
         .tablet-#{$i}{
             width: $i*100%/12;
@@ -274,6 +283,9 @@
 }
 /* SMALL < 768px */
 @media screen and (max-width: $tablet-min-width){
+    .grid-box{
+        width: $small-max-box;
+    }
     @for $i from 1 through 12{
         .small-#{$i}{
             width: $i*100%/12;
@@ -341,6 +353,9 @@
 }
 /* MOBILE < 576px */
 @media screen and (max-width: $small-min-width){
+    .grid-box{
+        width: $mobile-max-box;
+    }
     @for $i from 1 through 12{
         .mobile-#{$i}{
             width: $i*100%/12;

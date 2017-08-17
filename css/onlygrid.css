@@ -1,3 +1,5 @@
+/* RESPONSIVE */
+/* BOX GRIDS WIDTHS*/
 /*
   Only Grid Css
   Project Page - 
@@ -11,7 +13,7 @@
 [class*='desktop-'],
 [class*='tablet-'],
 [class*='mobile-'],
-.grid:after {
+.grid:after, .grid-box:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -31,12 +33,12 @@
   padding-right: 0;
   padding-left: 0; }
 
-.grid {
+.grid, .grid-box {
   width: 100%;
   min-width: auto;
   margin: 0 auto;
   overflow: hidden; }
-  .grid:after {
+  .grid:after, .grid-box:after {
     content: "";
     display: table;
     clear: both; }
@@ -59,6 +61,9 @@
   float: right; }
 
 /* COLS > 1200*/
+.grid-box {
+  width: 1140px; }
+
 /* COLUMNS */
 .col-1 {
   width: 8.33333%; }
@@ -200,6 +205,9 @@
 
 /* DESKTOP < 1200 */
 @media screen and (max-width: 1200px) {
+  .grid-box {
+    width: 960px; }
+
   .desktop-1 {
     width: 8.33333%; }
 
@@ -321,6 +329,9 @@
     clear: both; } }
 /* TABLET < 992px */
 @media screen and (max-width: 992px) {
+  .grid-box {
+    width: 720px; }
+
   .tablet-1 {
     width: 8.33333%; }
 
@@ -442,6 +453,9 @@
     clear: both; } }
 /* SMALL < 768px */
 @media screen and (max-width: 768px) {
+  .grid-box {
+    width: 540px; }
+
   .small-1 {
     width: 8.33333%; }
 
@@ -564,6 +578,9 @@
     clear: both; } }
 /* MOBILE < 576px */
 @media screen and (max-width: 576px) {
+  .grid-box {
+    width: 100%; }
+
   .mobile-1 {
     width: 8.33333%; }
 

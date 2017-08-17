@@ -4,8 +4,16 @@ $padding:12px;
 
 $min-width: auto;
 
+/* RESPONSIVE */
 $col-min-width: 1200px;
 $desktop-min-width: 992px;
 $tablet-min-width: 768px;
 $small-min-width: 576px;
 $mobile-max-width: 576px;
+
+/* BOX GRIDS WIDTHS*/
+$col-max-box: 1140px;
+$desktop-max-box: 960px;
+$tablet-max-box: 720px;
+$small-max-box: 540px;
+$mobile-max-box: 100%;
