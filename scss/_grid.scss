@@ -23,15 +23,13 @@
 [class*='desktop-'],
 [class*='tablet-'],
 [class*='mobile-'] {
+    position: relative;
+    display: block;
 	float: left;
   	min-height: 1px;
     padding-right: $padding; /* column-space */
     padding-left: $padding;
-}
-
-[class*='col-'] [class*='col-']:last-child {
-    padding-right: 0;
-    padding-left:0;
+    margin: 0 auto;
 }
 
 .grid, .grid-box{
@@ -56,13 +54,14 @@
     float:left;
 }
 .float-center{
-    position: relative;
-    display:block;
     margin: 0 auto;
+    float:none;
 }
 .float-right {
 	float: right;
 }
+
+
 /* COLS > 1200*/
 .grid-box{
     width: $col-max-box;
