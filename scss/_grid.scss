@@ -68,9 +68,9 @@
     width: $col-max-box;
 }
 /* COLUMNS */
-@for $i from 1 through 12{
+@for $i from 1 through $cols{
     .col-#{$i}{
-        width: $i*100%/12;
+        width: $i*100%/$cols;
     }
 }
 /* GROUPS COLUMNS */
@@ -119,9 +119,9 @@
     }
 }
 /* OFFSETS */
-@for $i from 1 through 12{
+@for $i from 1 through $cols{
     .col-off-#{$i}{
-        margin-left: $i*100/12;
+        margin-left: $i*100%/$cols;
     }
 }
 /* VISIBILITY */
@@ -148,9 +148,9 @@
     .grid-box{
         width: $desktop-max-box;
     }
-    @for $i from 1 through 12{
+    @for $i from 1 through $cols{
         .desktop-#{$i}{
-            width: $i*100%/12;
+            width: $i*100%/$cols;
         }
     }
     /* GROUPS COLUMNS */
@@ -188,9 +188,9 @@
         }
     }
     /* OFFSETS */
-    @for $i from 1 through 12{
+    @for $i from 0 through $cols{
         .desktop-off-#{$i}{
-            margin-left: $i*100%/12;
+            margin-left: $i*100%/$cols;
         }
     }
     /* VISIBILITY */
@@ -217,9 +217,9 @@
     .grid-box{
         width: $tablet-max-box;
     }
-    @for $i from 1 through 12{
+    @for $i from 1 through $cols{
         .tablet-#{$i}{
-            width: $i*100%/12;
+            width: $i*100%/$cols;
         }
     }
     /* GROUPS COLUMNS */
@@ -257,9 +257,9 @@
         }
     }
     /* OFFSETS */
-    @for $i from 1 through 12{
+    @for $i from 0 through $cols{
         .tablet-off-#{$i}{
-            margin-left: $i*100%/12; 
+            margin-left: $i*100%/$cols; 
         }
     }
     /* VISIBILITY */
@@ -286,9 +286,9 @@
     .grid-box{
         width: $small-max-box;
     }
-    @for $i from 1 through 12{
+    @for $i from 1 through $cols{
         .small-#{$i}{
-            width: $i*100%/12;
+            width: $i*100%/$cols;
         }
     }
     /* GROUPS COLUMNS */
@@ -326,9 +326,9 @@
         }
     }
     /* OFFSETS */
-    @for $i from 1 through 12{
+    @for $i from 0 through $cols{
         .small-off-#{$i}{
-            margin-left: $i*100%/12; 
+            margin-left: $i*100%/$cols; 
         }
     }
     /* VISIBILITY */
@@ -356,9 +356,9 @@
     .grid-box{
         width: $mobile-max-box;
     }
-    @for $i from 1 through 12{
+    @for $i from 1 through $cols{
         .mobile-#{$i}{
-            width: $i*100%/12;
+            width: $i*100%/$cols;
         }
     }
     /* GROUPS COLUMNS */
@@ -397,9 +397,9 @@
         }
     }
     /* OFFSETS */
-    @for $i from 1 through 12{
+    @for $i from 0 through $cols{
         .mobile-off-#{$i}{
-            margin-left: $i*100%/12;
+            margin-left: $i*100%/$cols;
         }
     }
     /* VISIBILITY */

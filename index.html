@@ -27,11 +27,27 @@
         .f12 .box {
             font-size: 12px;
         }
+        h1.title{
+            color: #6966E1;
+        }
     </style>
 </head>
 <body>
     <div class="grid-box">
         <div class="grid">
+            <h1 class="title">OnlyGrid.css</h1>
+            <p>Only grid is the <strong>Only Grid framework</strong> css based in 12 columns. This framework is based in <strong>block</strong> not in <em>flexbox</em></p>
+            <p>The framework is Full responsive separate in 5 devices: Mobile, Small, Tablet, Desktop, Large.</p>
+            <p>OnlyGrid is only framework have separations 5,7,8,9,10,11 equals columns.</p>
+            
+
+        </div>
+        <div class="grid">
+            <h2>Github</h2>
+            <a href="https://github.com/kloppz/onlygrid-css">Go to Github</a>
+        </div>
+        <div class="grid">
+            <h2>Columns size</h2>
             <div class="col-12 float-center"><div class="box">col-12</div></div>
             <div class="col-11 float-center"><div class="box">col-11</div></div>
             <div class="col-10 float-center"><div class="box">col-10</div></div>
@@ -44,6 +60,9 @@
             <div class="col-3 float-center"><div class="box">col-3</div></div>
             <div class="col-2 float-center"><div class="box">col-2</div></div>
             <div class="col-1 float-center"><div class="box">col-1</div></div>
+        </div>
+        <div class="grid">
+            <h2>Group equals columns</h2>
         </div>
         <div class="grid">
             <div class="col-12">
@@ -166,23 +185,114 @@
             <div class="col-group-11"><div class="box">col-group-11</div></div>
         </div>
         <div class="grid">
-                <div class="col-1"><div class="box">col-1</div></div>
-                <div class="col-1"><div class="box">col-1</div></div>
-                <div class="col-1"><div class="box">col-1</div></div>
-                <div class="col-1"><div class="box">col-1</div></div>
-                <div class="col-1"><div class="box">col-1</div></div>
-                <div class="col-1"><div class="box">col-1</div></div>
-                <div class="col-1"><div class="box">col-1</div></div>
-                <div class="col-1"><div class="box">col-1</div></div>
-                <div class="col-1"><div class="box">col-1</div></div>
-                <div class="col-1"><div class="box">col-1</div></div>
-                <div class="col-1"><div class="box">col-1</div></div>
-                <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+            <div class="col-1"><div class="box">col-1</div></div>
+        </div>
+
+        <div class="grid">
+            <h2>Floats</h2>
+        </div>
+        <div class="grid">
+            <div class="col-3 float-left">
+                    <div class="box">col-3 float-left</div>
+                </div>
+            <div class="col-3 float-right">
+                <div class="box">col-3 float-right</div>
             </div>
-
-
+            <div class="col-3 float-center">
+                <div class="box">col-3 float-center</div>
+            </div>
+        </div>
+        <div class="grid">
+            <h2>Offset</h2>
+        </div>
+        <div class="grid">
+            <div class="col-3 col-off-2">
+                    <div class="box">col-3 col-off-4</div>
+                </div>
+            <div class="col-4 col-off-3">
+                <div class="box">col-4 col-off-3</div>
+            </div>
+        </div>
+        <div class="grid">
+            <h2>Responsive</h2>
+        </div>
+        <div class="grid">
+            <div class="col-4 mobile-12">
+                <div class="box">col-4 mobile-12</div>
+            </div>
+            <div class="col-8 small-6 mobile-12">
+                <div class="box">col-8 small-6 mobile-12</div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-6 desktop-4 tablet-12">
+                <div class="box">col-6 desktop-4</div>
+            </div>
+            <div class="col-6 desktop-8 tablet-12">
+                <div class="box">col-6 desktop-8</div>
+            </div>
+        </div>
+        <div class="grid">
+            <h2>Visibility</h2>
+        </div>
+        <div class="grid">
+            <div class="col-4 mobile-hide">
+                <div class="box">col-4 mobile-hide</div>
+            </div>
+            <div class="mobile-12 mobile-only">
+                    <div class="box">mobile-12 mobile-only</div>
+                </div>
+            <div class="col-8 mobile-12">
+                <div class="box">col-8 small-6 mobile-12</div>
+            </div>
+        </div>
+        <div class="grid">
+            <h2>Groupeds</h2>
+        </div>
+        <div class="grid">
+            <div class="grouped">
+                <div class="col-group-5">
+                    <div class="box">col-group-5</div>
+                </div>
+                <div class="col-group-5">
+                    <div class="box">col-group-5</div>
+                </div>
+                <div class="col-group-5">
+                    <div class="box">col-group-5</div>
+                </div>
+                <div class="col-group-5">
+                    <div class="box">col-group-5</div>
+                </div>
+                <div class="col-group-5">
+                    <div class="box">col-group-5</div>
+                </div>
+            </div> 
+            <div class="clearfix"></div>
+            <div class="grouped float-center col-6">
+                <div class="col-6"><div class="box">col-3</div></div>
+                <div class="col-6"><div class="box">col-3</div></div>
+            </div>        
+        </div>
     </div>
-
+    <div class="grid-box">
+        <div class="col-3">
+            <p>Created by <a href="https://github.com/kloppz">@kloppz</a></p>
+        </div>
+        <div class="col-3 float-right">
+            <p>Published with <a href="https://kloppz.github.io/onlygrid-css/">Github pages</a></p>
+        </div>
+    </div>
 
 
 </body>
